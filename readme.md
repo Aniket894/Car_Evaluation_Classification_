@@ -1,7 +1,7 @@
 # Car Evaluation Project Documentation
 
 
-Table of Contents
+## Table of Contents
 
 Introduction
 
