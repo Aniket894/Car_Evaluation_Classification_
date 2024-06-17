@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Evaluation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(176, 124, 222);
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background-color: rgba(194, 246, 246, 0.9); /* Slightly transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        .card h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card label {
+            display: block;
+            margin-top: 10px;
+        }
+        .card input {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .card button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .card ul li {
+            background: #f9f9f9;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .card ul li span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Car Evaluation</h1>
+            <form action="/predict" method="POST">
+                <label for="buying">Buying:</label>
+                <input type="text" id="buying" name="buying" required><br>
+
+                <label for="maint">Maintenance:</label>
+                <input type="text" id="maint" name="maint" required><br>
+
+                <label for="doors">Doors:</label>
+                <input type="text" id="doors" name="doors" required><br>
+
+                <label for="persons">Persons:</label>
+                <input type="text" id="persons" name="persons" required><br>
+
+                <label for="lug_boot">Luggage Boot:</label>
+                <input type="text" id="lug_boot" name="lug_boot" required><br>
+
+                <label for="safety">Safety:</label>
+                <input type="text" id="safety" name="safety" required><br>
+
+                <button type="submit">Evaluate</button>
+            </form>
+        </div>
+        <div class="card">
+            <h1>Evaluation Criteria</h1>
+            <ul>
+                <li><span>Buying:</span> {vhigh: 0, high: 1, med: 2, low: 3}</li>
+                <li><span>Maintenance:</span> {vhigh: 0, high: 1, med: 2, low: 3}</li>
+                <li><span>Doors:</span> {2: 0, 3: 1, 4: 2, 5more: 3}</li>
+                <li><span>Persons:</span> {2: 0, 4: 1, more: 2}</li>
+                <li><span>Luggage Boot:</span> {small: 0, med: 1, big: 2}</li>
+                <li><span>Safety:</span> {low: 0, med: 1, high: 2}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
