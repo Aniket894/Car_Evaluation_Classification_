@@ -107,15 +107,26 @@ Car Evaluation Dataset: https://archive.ics.uci.edu/dataset/19/car+evaluation
 ## Flask File Structure
 
 flask_app/
+
 │
+
 ├── app.py
+
 ├── templates/
+
 │   ├── index.html
+
 │   └── results.html
+
 ├── static/
+
 │   └── styles.css
+
 └── notebooks
+
     ├── Evaluation_Bar_Chart.jpg
+    
     ├── Car_Evaluation.ipynb
+    
     └── gradient.pkl
 
