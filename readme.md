@@ -98,6 +98,24 @@ Gradient Boosting Classifier Top in the chart with a bar of 97% accuracy.
 ![download (2)](https://github.com/Aniket894/Car_Evaluation_Classification_/assets/134599961/e82c32de-b49e-4c07-b859-0ce8d95f995b)
 
 
+
 ## References
 
 Car Evaluation Dataset: https://archive.ics.uci.edu/dataset/19/car+evaluation
+
+
+## Flask File Structure
+
+flask_app/
+│
+├── app.py
+├── templates/
+│   ├── index.html
+│   └── results.html
+├── static/
+│   └── styles.css
+└── notebooks
+    ├── Evaluation_Bar_Chart.jpg
+    ├── Car_Evaluation.ipynb
+    └── gradient.pkl
+
