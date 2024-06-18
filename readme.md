@@ -112,22 +112,22 @@ flask_app/
 
 └── notebooks
 
-│    ├── Evaluation_Bar_Chart.jpg
+│         ├── Evaluation_Bar_Chart.jpg
     
-│    ├── Car_Evaluation.ipynb
+│         ├── Car_Evaluation.ipynb
     
-│    └── gradient.pkl
+│         └── gradient.pkl
 
 ├── app.py
 
 ├── templates/
 
-│   ├── index.html
+│         ├── index.html
 
-│   └── results.html
+│         └── results.html
 
 ├── static/
 
-│   └── styles.css
+│         └── styles.css
 
 
