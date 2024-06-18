@@ -110,6 +110,14 @@ flask_app/
 
 │
 
+└── notebooks
+
+│    ├── Evaluation_Bar_Chart.jpg
+    
+│    ├── Car_Evaluation.ipynb
+    
+│    └── gradient.pkl
+
 ├── app.py
 
 ├── templates/
@@ -122,11 +130,4 @@ flask_app/
 
 │   └── styles.css
 
-└── notebooks
-
-    ├── Evaluation_Bar_Chart.jpg
-    
-    ├── Car_Evaluation.ipynb
-    
-    └── gradient.pkl
 
